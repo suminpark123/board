@@ -1,4 +1,6 @@
 # board
+게시판 작업중
+HomeView_테이블작업
 
 ## Project setup
 ```
