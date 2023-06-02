@@ -4,7 +4,7 @@
 ## vue.js study
 
 * 기본문법 공부
-* jsonplaceholder 가상데이터사용
+* JSONPlaceholder 가상서버사용
 * axios 연동
 
 
