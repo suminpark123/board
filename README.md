@@ -1,26 +1,11 @@
-# board
-게시판 작업중
-HomeView_테이블작업
+# vue.js_sidepro
+게시판 작업중(HomeView_테이블작업)
 
-## Project setup
-```
-npm install
-```
+## vue.js study
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+* 기본문법 공부
+* JSONPlaceholder 가상서버 사용
+* axios 연동
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
