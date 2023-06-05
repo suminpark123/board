@@ -13,31 +13,42 @@
 import apiBoard from '@/api/board'
 
 
-export default {
-  mounted() {
-    apiBoard.getArticle(1)
-      .then(function (response) {
-        console.log('getArticle', response);
-      })
-      .catch(function (e) {
-        console.log(e);
-      });
 
+
+export default {
+  data(){
+    return{
+      
+      articles : null,
+    }
+  },
+  mounted() {
     apiBoard.getArticles(0)
-      .then(function (response) {
-        console.log('getArticles', response);
+    .then((response)=>{
+        console.log('getArticles1111', response);
+        this.articles = response.data;
+        
       })
-      .catch(function (e) {
+      .catch((e) => {
         console.log(e);
       });
-    apiBoard.postArticle('userId', 'title', 'body')
-      .then(function (response) {
-        console.log('postArticle', response);
-      })
-      .catch(function (e) {
-        console.log(e);
-      });
-  }
+      
+    // apiBoard.postArticle('userId', 'title', 'body')
+    //   .then(function (response) {
+    //     console.log('postArticle', response);
+    //   })
+    //   .catch(function (e) {
+    //     console.log(e);
+    //   });
+    
+  },
+  methods :{
+      rowClicked(row){
+        this.$router.push({
+          path:`/board/detail/${row.id}`
+        })
+      } 
+    }
 }
 
 
