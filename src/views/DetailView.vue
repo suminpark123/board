@@ -12,6 +12,7 @@
         </el-row>
         <br />
         <el-button type="success" @click="goback">Back</el-button>
+        <el-button type="success" @click="editArticle">수정</el-button>
     </div>
   </template>
 
@@ -40,8 +41,11 @@ export default{
   methods : {
     goback(){
       this.$router.go(-1);
-    }
+    },
+    editArticle(){
+      this.$router.push({path: `/board/write/${this.$route.params.id}`});
   }
+}
 }
 
 </script>
